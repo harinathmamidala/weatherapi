@@ -33,7 +33,7 @@ const searchCity = async () => {
     getCityImage(city)
 
   } catch (error) {
-    alert("INVALID CITY");
+    alert("TRY AGAIN....");
     console.log(error);
     console.log("Something happend");
   }
