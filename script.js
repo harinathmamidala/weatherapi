@@ -73,9 +73,11 @@ const getCityImage=(city)=>{
   fetch(`https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/Search/ImageSearchAPI?q=${city}%20climate&pageNumber=1&pageSize=1&autoCorrect=true`, options)
 	.then(response => response.json())
 	.then(response => {
+	  console.log(response)
     document.getElementById("city-img").src=response.value[0].url
   })
 	.catch(err => {
+	  console.log(err)
     document.getElementById('city-img').src="404-error-error-404-transparent-11563210406bsmsusbbzi.png"
   });
 }
