@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+  <title>weather app</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+
+  <div class="container">
+    <!-- <div class="background-img-div">
+        <img class="background-img" src="pexels-pixabay-258136.jpg" >
+      </div> -->
+
+
+
+    <div class="header">
+      <h1>WEATHER API</h1>
+    </div>
+    <div class="search-bar">
+      <input type="text" id="city-input">
+      <button>
+        <img class="search-icon"  onclick="searchCity()" src="search.svg">
+      </button>
+
+    </div>
+
+    <div class="weather-info">
+      <div class="city-img-div">
+        <h1 class="city-name" id="city-name"></h1>
+        <h3 class="country-name" id="country-name"></h3>
+        <img id="city-img" class="city-img" src="thumbnail-1.jpg">
+      </div>
+
+
+
+      <div class="weather-readings">
+        <div>
+          <h3 class="weather-type" id="weather-type">Weather-Type...</h3>
+        </div>
+        <div class="readings1">
+          <li>Temp : <span id="temp">--</span>°</li>
+          <li>Min Temp : <span id="min-temp">--</span>°</li>
+          <li>Max Temp : <span id="max-temp">--</span>°</li>
+        </div>
+        <div class="readings2">
+          <li>Humidity : <span id="humidity">--</span> </li>
+          <li>Pressure : <span id="pressure">--</span> Pas</li>
+          <li>Wind Speed : <span id="windspeed">--</span> Km/s</li>
+        </div>
+        <div class="readings3">
+          <h3>Coordinates :--</h3>
+          <li>Longitude :<span id="latitude">--</span></li>
+          <li>Latitude :<span id="longitude">--</span></li>
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="script.js">
+
+  </script>
+</body>
+
+</html>
